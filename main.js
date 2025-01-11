@@ -3,7 +3,7 @@ let getBtn = document.querySelector("input[type='submit']");
 let reposContainer = document.querySelector(".repos");
 getBtn.addEventListener("click", () => {
   if (input.value != "") {
-    reposContainer.style.display = "block";
+    
     reposContainer.innerHTML = "";
     let username = input.value;
     fetch(`https://api.github.com/users/${username}/repos`)
@@ -30,5 +30,6 @@ getBtn.addEventListener("click", () => {
           reposContainer.appendChild(repoDiv);
         }
       });
+    reposContainer.style.display = "block";
   }
 });
