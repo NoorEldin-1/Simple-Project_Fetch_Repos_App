@@ -3,7 +3,6 @@ let getBtn = document.querySelector("input[type='submit']");
 let reposContainer = document.querySelector(".repos");
 getBtn.addEventListener("click", () => {
   if (input.value != "") {
-    
     reposContainer.innerHTML = "";
     let username = input.value;
     fetch(`https://api.github.com/users/${username}/repos`)
