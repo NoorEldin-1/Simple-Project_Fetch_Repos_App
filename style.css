@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+body {
+  min-height: 100vh;
+}
+h2 {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.form {
+  background-color: #cdcdcd;
+  width: 750px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+  border-radius: 6px;
+}
+.form input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.form input[type="submit"] {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.form input[type="submit"]:hover {
+  background-color: #1976d2;
+}
+.repos {
+  width: 750px;
+  margin: 20px auto;
+  background-color: #cdcdcd;
+  border-radius: 6px;
+  padding: 10px;
+  display: none;
+}
+.repo {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+.repo .repo-url {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  right: 112px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.repo .repo-url:hover {
+  background-color: #d32f2f;
+}
+.repo .homepage {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.repo .homepage:hover {
+  background-color: #1976d2;
+}
